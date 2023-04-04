@@ -12,6 +12,11 @@ header {
 	padding: 20px;
 }
 
+nav {
+	display:flex;
+	flex-direction:row;
+}
+
 nav ul li a {
 	color: #fff;
 	text-decoration: none;

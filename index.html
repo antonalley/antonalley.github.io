@@ -1,8 +1,60 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Anton Alley Showcase</title>
-  </head>
-  <body>
-    <h1> Anton Alley Developer Shocase </h1>
-  </body>
+<head>
+	<title>My Projects</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>My Projects</h1>
+		<nav>
+			<ul>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="projects">
+			<h2>Projects</h2>
+			<ul>
+				<li>
+					<h3>Project 1</h3>
+					<img src="project1.png" alt="Project 1 Screenshot">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce auctor nulla non urna volutpat, euismod tristique ex bibendum.</p>
+				</li>
+				<li>
+					<h3>Project 2</h3>
+					<video src="project2.mp4" controls></video>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce auctor nulla non urna volutpat, euismod tristique ex bibendum.</p>
+				</li>
+				<li>
+					<h3>Project 3</h3>
+					<img src="project3.png" alt="Project 3 Screenshot">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce auctor nulla non urna volutpat, euismod tristique ex bibendum.</p>
+				</li>
+			</ul>
+		</section>
+		<section id="about">
+			<h2>About</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce auctor nulla non urna volutpat, euismod tristique ex bibendum.</p>
+		</section>
+		<section id="contact">
+			<h2>Contact</h2>
+			<form>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name">
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email">
+				<label for="message">Message:</label>
+				<textarea id="message" name="message"></textarea>
+				<input type="submit" value="Send">
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 My Projects</p>
+	</footer>
+</body>
 </html>

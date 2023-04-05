@@ -3,10 +3,14 @@
 <head>
 	<title>Anton Alley Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js" defer></script>
 </head>
 <body>
 	<header>
-		<h1>Anton Alley Developer Portfolio</h1>
+		<div>
+			<h1>Anton Alley Developer Portfolio</h1>
+			
+		</div>
 		<div id="navigation">
 			<a href="#projects">Projects</a>
 			<a href="#about">About</a>
@@ -14,11 +18,23 @@
 		</div>
 	</header>
 	<main>
+		<section id="about">
+			<h2>About</h2>
+			<div class="project-detail">
+				<img width="50%" src="/img/anton_nice.jpg">
+				<p>
+					Anton Alley grew up in the suburbs of Chicago, IL with 5 siblings. He is currently at BYU studying computer science. 
+					The purpose of this Portfolio is to give a brief overview of the projects that he's worked on and what he learned from them.
+
+				</p>
+			</div>
+		</section>
 		<section id="projects">
 			<h2>Projects</h2>
 			<ul>
 				<li>
 					<h3>Byepolar.tv: React.js and Firebase App</h3>
+					<em>Ongoing</em>
 					<div class="project-detail">
 						<div class="details">
 							<p>
@@ -41,13 +57,14 @@
 							</div>
 						</div>
 						<div class="media-carousel">
-							<img width="660" height="380" src="img/byepolar-home-4-4-23.png" alt="ByePolar Home">
-							<img width="660" height="380" src="img/byepolar-choose-side-4-4-23.png" alt="ByePolar Choose side">
+							<img width="auto" height="380" style="object-fit: cover;" src="img/byepolar-home-4-4-23.png" alt="ByePolar Home">
+							<img width="auto" height="380" style="object-fit: cover;" src="img/byepolar-choose-side-4-4-23.png" alt="ByePolar Choose side">
 						</div>
 					</div>
 				</li>
 				<li>
 					<h3>Lonomo: Swift iOS mobile development</h3>
+					<em>Fall 2022</em>
 					<div class="project-detail">
 						<div class="details">
 							<p>
@@ -73,21 +90,22 @@
 							<strong><a href="https://github.com/antonalley/lonomo_ios" target="_blank">Github Repo iOS</a></strong>
 						</div>
 						<div class="media-carousel">
-							<iframe width="210" height="460"
+							<iframe width="auto" height=auto0"
 								src="https://www.youtube.com/embed/IA7Hyt8vpjU?mute=1&autoplay=1&playlist=IA7Hyt8vpjU&loop=1"
 								frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
 								>
 								
 							</iframe>
-							<img width="210" height="400" src="img/lonomo_login.png" alt="Lonomo Login">
-							<img width="210" height="400" src="img/lonomo_home.png">
-							<img width="210" height="400" src="img/lonomo_event.png">
+							<img width="auto" height="400" src="img/lonomo_login.png" alt="Lonomo Login">
+							<img width="auto" height="400" src="img/lonomo_home.png">
+							<img width="auto" height="400" src="img/lonomo_event.png">
 							
 						</div>
 					</div>
 				</li>
 				<li>
 					<h3>Needs First: Hackathon Full-stack application</h3>
+					<em>Oct 2022</em>
 					<div class="project-detail">
 						<div class="details">
 							<p>
@@ -109,29 +127,62 @@
 							<strong><a href="https://github.com/antonalley/NeedsFirst" target="_blank">Github Repo</a></strong>
 						</div>
 						<div class="media-carousel">
-							<iframe width="460" height="280"
+							<iframe width="auto" height="280"
 								src="https://www.youtube.com/embed/p1EzpTzQTmU?mute=1&autoplay=1&playlist=p1EzpTzQTmU&loop=1"
 								frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
 								>
 							</iframe>
-							<img width="460" height="280" src="img/Needs-first-home.png">
-							<img width="460" height="280" src="img/Needs-first-buy.png">
+							<img width="auto" height="280" src="img/Needs-first-home.png">
+							<img width="auto" height="280" src="img/Needs-first-buy.png">
+							
+						</div>
+					</div>
+				</li>
+				<li>
+					<h3>Snakes AI: Genetic Algorithm Machine Learning</h3>
+					<em>Early 2019</em>
+					<div class="project-detail">
+						<div class="details">
+							<p>
+								I did this project when I first learned about machine learning. I got really excited about neural networks, and I wanted
+								to figure everything out about them that I could. Being a novice programmer, I wanted to do it all without any external 
+								machine learning libraries, so I did it from scratch. I had to use linear algebra for the neural network, but the backpropigation
+								techiniques were over my head at this point, so that's why I looked into genetic algorithms. It is definetly not the most 
+								effective, as you can see in the video it doesn't get super far. But at the same time it was really cool because I didn't
+								program any stragegy or rules into it, all it took into account was the state of the board, and the neural network trained
+								simply by a random genetic algorithm thousands of time overnight on my old janky laptop, and it learned as much as it did.
+								Even though not super impressive, this project got me really excited about machine learning and its possibilities.
+							</p>
+							<p>
+								The graph shows an example of the fitness over epochs of training.
+							</p>
+							<div>Skills Used:
+								<ul>
+									<li>Python</li>
+									<li>Machine Learning</li>
+								</ul>
+							</div>
+							<br />
+							<strong><a href="https://github.com/antonalley/SNAKES-AI" target="_blank">Github Repo</a></strong>
+						</div>
+						<div class="media-carousel">
+							<iframe width="440" height="280"
+								src="https://www.youtube.com/embed/CZDHCbbDORQ?mute=1&autoplay=1&playlist=CZDHCbbDORQ&loop=1"
+								frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+								>
+							</iframe>
+							<img width="400" height="280" src="img/fitness5000smalltall.png">
 							
 						</div>
 					</div>
 				</li>
 			</ul>
 		</section>
-		<section id="about">
-			<h2>About</h2>
-			<div class="project-detail">
-				<img width="50%" src="/img/anton_nice.jpg">
-				<p>Anton Alley grew up in the suburbs of Chicago, IL with 5 siblings.</p>
-			</div>
-		</section>
+		
 		<section id="contact">
 			<h2>Contact</h2>
 			<div class="project-detail">
+				<p>Linked in: <a href="https://www.linkedin.com/in/anton-alley/" target="_blank">Anton Alley</a></p>
 				<p>To contact me, please send an email to <a href="mailto:anton.alley@outlook.com">anton.alley@outlook.com</a>.</p>
 			</div>
 		</section>
@@ -140,7 +191,8 @@
 	</main>
 	<footer>
 		<!-- <p>&copy; 2023 My Projects</p> -->
+		<em style="text-align: right;">Last updated: 4/4/2023</em>
 	</footer>
-	<script src="script.js"></script>
+	
 </body>
 </html>

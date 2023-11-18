@@ -1,0 +1,62 @@
+.header {
+    position: fixed;
+    top: 5.5em;
+    left: 35vw;
+    right: 35vw;
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.603); /* or any color of your choice */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* creates the elevation effect */
+    border-radius: 4em; /* rounded corners */
+    z-index: 1000; /* ensures it stays on top */
+    opacity: 0;
+    /* transition: all 1s ease-in-out; */
+    animation: 2s ease-in-out 0.25s bloop-in forwards;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@keyframes bloop-in {
+    50% {
+        opacity: 1;
+        top: 0.5em;
+    }
+    100% {
+        opacity: 1;
+        top: 0.5em;
+        left: 7vw;
+        right: 7vw;
+    }
+}
+
+/* .header.visible {
+    opacity: 100%;
+    top: 0.5em
+}
+
+.header.expanded {
+    left: 7vw;
+    right: 7vw;
+} */
+
+
+.header-name {
+    font-weight: bold;
+    color: black;
+    flex: 1.5;
+}
+
+.page-button {
+    color: rgb(122, 116, 111);
+    font-weight: bold;
+    font-size: small;
+    cursor: pointer;
+    padding: 0.5em;
+    flex: 1;
+}
+
+.page-button.selected {
+    color: rgb(64, 60, 57) !important;
+    font-size: medium !important;
+}

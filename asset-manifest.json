@@ -1,15 +1,32 @@
 {
   "files": {
-    "main.css": "/static/css/main.1072185f.css",
-    "main.js": "/static/js/main.d79812ec.js",
-    "static/js/787.3dcb5c1f.chunk.js": "/static/js/787.3dcb5c1f.chunk.js",
+    "main.css": "/static/css/main.6a2a03c7.css",
+    "main.js": "/static/js/main.09c27ae9.js",
+    "static/media/Raleway-VariableFont_wght.ttf": "/static/media/Raleway-VariableFont_wght.e14d84ccec6be3ff19e3.ttf",
+    "static/media/linux.svg": "/static/media/linux.5888d746c8190fdaec1f9f710efaaf90.svg",
+    "static/media/raspberry_pi.svg": "/static/media/raspberry_pi.f378c1788be1862a539d375ebbbded30.svg",
+    "static/media/node.svg": "/static/media/node.8c71fd11790c1b55f62eb252033f2c62.svg",
+    "static/media/java.svg": "/static/media/java.38de31869a5a34c44a779c241f671a9a.svg",
+    "static/media/aws.svg": "/static/media/aws.c81896d13bf49a172bc410a30608d14e.svg",
+    "static/media/python.svg": "/static/media/python.b7dca7431ec705868eb4af0c7a3af670.svg",
+    "static/media/docker.svg": "/static/media/docker.c1458ec6bc2dfadb44d064525c1d433c.svg",
+    "static/media/github.svg": "/static/media/github.22861d029067f48455b871565623aeb7.svg",
+    "static/media/typescript.svg": "/static/media/typescript.68865ea9152d5981da1e2df40d875c2d.svg",
+    "static/media/stripe.svg": "/static/media/stripe.a5c6d9aadc7738ca5ae533ad07f3e092.svg",
+    "static/media/google_maps.svg": "/static/media/google_maps.040eb2e224fc077048b6e4a16bfef187.svg",
+    "static/media/swift.svg": "/static/media/swift.530d95728f58a81e360a2fcef4435335.svg",
+    "static/media/firebase.svg": "/static/media/firebase.eeb7077534c1550d2f0140fd2a649dc7.svg",
+    "static/media/css.svg": "/static/media/css.74d7bcc15b667f1b98e7c0170080357e.svg",
+    "static/media/html.svg": "/static/media/html.2b2e078a005e3b67d05cd71b6b2b0f7f.svg",
+    "static/media/javascript.svg": "/static/media/javascript.6e5aebc171a0e070c3849b3dac26ed37.svg",
+    "static/media/django.svg": "/static/media/django.43e79a0f0d3f6ac7251af536cdd7fd70.svg",
     "index.html": "/index.html",
-    "main.1072185f.css.map": "/static/css/main.1072185f.css.map",
-    "main.d79812ec.js.map": "/static/js/main.d79812ec.js.map",
-    "787.3dcb5c1f.chunk.js.map": "/static/js/787.3dcb5c1f.chunk.js.map"
+    "static/media/kotlin.svg": "/static/media/kotlin.036a9bb4afb97deb65898ff06132f39c.svg",
+    "main.6a2a03c7.css.map": "/static/css/main.6a2a03c7.css.map",
+    "main.09c27ae9.js.map": "/static/js/main.09c27ae9.js.map"
   },
   "entrypoints": [
-    "static/css/main.1072185f.css",
-    "static/js/main.d79812ec.js"
+    "static/css/main.6a2a03c7.css",
+    "static/js/main.09c27ae9.js"
   ]
 }

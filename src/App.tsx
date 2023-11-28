@@ -5,6 +5,7 @@ import { Header } from './header';
 import { Work } from './work';
 import LoadingComponent from './LoadingComponent';
 import { Intro } from './Intro';
+import { Projects } from './Projects';
 
 function App() {
   const [selectedTab, setSelectedTab] = useState<String>(null)
@@ -40,6 +41,8 @@ function App() {
         <Work /> 
         : selectedTab=="Intro" ?
         <Intro />
+        : selectedTab=="Projects" ?
+        <Projects />
         :<></>}
       </div>
     </div>

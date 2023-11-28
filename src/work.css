@@ -15,8 +15,7 @@
 }
 
 .experience-list {
-    color: var(--slate);
-    
+    color: var(--slate); 
     overflow-y: auto;
     height: 55vh;
 }

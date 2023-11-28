@@ -41,5 +41,6 @@ Microsoft office
 TO-ADD: 
 PostgreSQL
 SQL
+Figma
 
 ###

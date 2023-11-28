@@ -1,0 +1,122 @@
+.projects {
+    padding-top: 5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: calc(100vh - 5em);
+    position: relative;
+    overflow: hidden;
+}
+
+
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.projects-list::-webkit-scrollbar {
+    display: none;
+}
+
+.projects::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 15%; /* Height of the fade effect */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), var(--coconut));
+    pointer-events: none; /* Allows scrolling even on the fade area */
+    
+}
+
+.project-container {
+    color: var(--slate);
+    /* background-color: var(--coconut); */
+    transition: all 0.8s ease;
+    padding: 3vh;
+    border-radius: 0.5em;
+    margin: 0.5vh;
+    width: 20vw;
+    position: relative;
+}
+
+.chevron {
+    position: absolute;
+    opacity: 0;
+    right: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all ease-out 0.4s;
+}
+
+.chevron path {
+    fill: var(--coconut)
+}
+
+.project-container:hover {
+    background-color: var(--slate);
+    color: var(--coconut);
+    cursor: pointer;
+}
+
+.project-container:hover .chevron {
+    opacity: 1;
+    right: 1em;
+}
+
+.project-title {
+    text-align: start;
+    font-weight: 500;
+}
+
+.project-skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 10px 0px;
+    
+}
+
+.project-skills .skill {
+    padding: 10px;
+    border-radius: 20px;
+    outline: 1px rgb(115, 115, 115) solid;
+    font-size: small;
+}
+
+.project-detail {
+    width: 0;
+    height: 100%;
+    transition: all ease-in-out 0.5s;
+    border-radius: 0.5em;
+    color: var(--slate);
+    opacity: 0;
+    box-sizing: border-box;
+}
+
+.project-detail.open {
+    width: 50vw;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.05);
+    margin: 0 2em;
+    padding: 3vw;
+}
+
+.pdisplay-description {
+    font-size: 0.6em;
+}
+
+.pdisplay-github a {
+    text-decoration: none;
+    font-size: small;
+    font-weight: bold;
+    padding: 0.5em;
+    border: solid black 1px;
+    border-radius: 1em;
+    width: fit-content;
+}

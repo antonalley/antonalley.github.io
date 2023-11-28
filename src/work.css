@@ -1,0 +1,124 @@
+.work-container {
+    height: 100%;
+    padding-top: 4em;
+    opacity: 0;
+    transform: translateY(30vh);
+    animation: come-down 1s ease-in-out 0s forwards;
+}
+
+@keyframes come-down {
+    100% {
+        transform: none;
+        opacity: 1;
+    }
+    
+}
+
+.experience-list {
+    color: var(--slate);
+    
+    overflow-y: auto;
+    height: 55vh;
+}
+
+.experience-list::-webkit-scrollbar {
+    display: none;
+}
+
+.experience-list-container {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    margin: 10vh 20vh;
+    padding-right: 20vh;
+    padding-left: 30vh;
+    
+}
+
+.experience-list-container::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 70%; /* Height of the fade effect */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), var(--coconut));
+    pointer-events: none; /* Allows scrolling even on the fade area */
+    
+}
+
+.job {
+    display: flex;
+    flex-direction: row;
+}
+
+.job-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.job-icon svg,img {
+    width: 7vh !important;
+    width: auto;
+    margin: auto;
+}
+
+.job-words {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 5vh;
+}
+.time {
+    font-size: small;
+}
+.job-title {
+    font-weight: bold;
+}
+.short-description {
+    font-size: smaller;
+    text-align: start;
+}
+
+.skills-display {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding: 10px;
+}
+
+.skill-icon {
+    padding: 10px;
+    border-radius: 20px;
+    outline: 1px rgb(115, 115, 115) solid;
+    font-size: small;
+}
+
+.toggles {
+    color: var(--coconut);
+    font-size: large;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-bottom: 2vh;
+}
+
+.toggle-option {
+    padding: 10px;
+    border-radius: 40px;
+    /* outline: 1px rgb(115, 115, 115) solid; */
+    background-color: rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+.toggle-option:hover {
+    transform: translate(0.1em, -0.1em);
+}
+
+.toggle-option.selected {
+    background-color: var(--cinnamon);
+    /* color: rgb(59, 59, 255); */
+    /* font-weight: bold; */
+}

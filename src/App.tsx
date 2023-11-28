@@ -1,11 +1,34 @@
-import React, { useState } from 'react';
-import logo from './logo.svg';
+import { useEffect, useState } from 'react';
 import './App.css';
 import { Skills } from './Skills';
 import { Header } from './header';
+import { Work } from './work';
+import LoadingComponent from './LoadingComponent';
+import { Intro } from './Intro';
 
 function App() {
-  const [selectedTab, setSelectedTab] = useState("Skills")
+  const [selectedTab, setSelectedTab] = useState<String>(null)
+  const [pageLoading, setPageLoading] = useState<Boolean>(true);
+
+  useEffect(()=> {
+    if (!pageLoading){
+          // Step 4: Set a timer
+      const timer = setTimeout(() => {
+        setSelectedTab("Intro"); // Update the state after 2 seconds
+      }, 2000);
+
+      // Step 5: Cleanup the timer
+      return () => clearTimeout(timer);
+    }
+  }, [pageLoading])
+
+  if (pageLoading){
+    return (
+      <LoadingComponent onLoaded={() => setPageLoading(false)} />
+    )
+  }
+
+  
 
   return (
     <div className="App">
@@ -13,7 +36,11 @@ function App() {
         <Header selectedTab={selectedTab} setSelectedTab={setSelectedTab}/>
         {selectedTab==="Skills" ?
           <Skills />
-        : <div style={{marginTop: "5em", color:'black'}}>Anton's porfolio is being developed, this page isn't finished</div>}
+        : selectedTab=="Work Experience" ? 
+        <Work /> 
+        : selectedTab=="Intro" ?
+        <Intro />
+        :<></>}
       </div>
     </div>
   );

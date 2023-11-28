@@ -1,4 +1,3 @@
-import { useEffect, useLayoutEffect, useState } from "react"
 import "./Header.css"
 
 export function Header({ selectedTab, setSelectedTab }){
@@ -8,7 +7,8 @@ export function Header({ selectedTab, setSelectedTab }){
                 onClick={()=>setSelectedTab("Skills")}>Skills</span>
             <span className={`page-button ${selectedTab=="Work Experience" && "selected"}`}
                 onClick={()=>setSelectedTab("Work Experience")}>Work Experience</span>
-            <span className="header-name">Anton Alley</span>
+            <span className="header-name"
+                onClick={()=>setSelectedTab("Intro")}>Anton Alley</span>
             <span className={`page-button ${selectedTab=="Projects" && "selected"}`}
                 onClick={()=>setSelectedTab("Projects")}>Projects</span>
             <span className={`page-button ${selectedTab=="Personal" && "selected"}`}

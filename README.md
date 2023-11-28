@@ -37,4 +37,9 @@ Linux
 CI / CD
 Microsoft office
 
+
+TO-ADD: 
+PostgreSQL
+SQL
+
 ###

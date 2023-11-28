@@ -5,9 +5,25 @@
                             'embedded-opentype', and 'svg' */
 }
 
+@font-face {
+  font-family: 'nycd';
+  src: local('nycd'), url(./fonts/NothingYouCouldDo-Regular.ttf) format('truetype');
+}
+
 body {
   margin: 0;
+  color: var(--slate);
   font-family:"Raleway";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --tan: rgb(246, 238, 233);
+  --burlap: #BFB19F;
+  --slate: #262524;
+  --olive: #595443;
+  --coconut: #F2F0EB;
+  --cinnamon: #8C6046;
+  --loadspeed: 0.2s;
 }

@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr); /* 5 columns */
     grid-template-rows: repeat(5, 1fr); /* 5 rows */
-    gap: 10px; /* Adjust the gap as needed */
+    gap: 3vw; /* Adjust the gap as needed */
     justify-content: center;
     align-items: center;
     width: 100%; /* Adjust the width as needed */
@@ -46,8 +46,8 @@
 .skills-container {
     margin-top: 4em;
     opacity: 0;
-    transform: translateY(-50vh);
-    animation: come-down 1s ease-in-out 1s forwards;
+    transform: translateY(30vh);
+    animation: come-down 1s ease-in-out 0s forwards;
 }
 
 @keyframes come-down {
@@ -59,7 +59,7 @@
 }
 
 .skills-title {
-    color: black;
+    color: var(--slate);
     margin: 4vh;
     display: flex;
     flex-direction: column;

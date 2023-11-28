@@ -4,13 +4,12 @@
     left: 35vw;
     right: 35vw;
     padding: 1em;
-    background-color: rgba(255, 255, 255, 0.603); /* or any color of your choice */
+    background-color: var(--burlap);
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* creates the elevation effect */
     border-radius: 4em; /* rounded corners */
     z-index: 1000; /* ensures it stays on top */
     opacity: 0;
-    /* transition: all 1s ease-in-out; */
-    animation: 2s ease-in-out 0.25s bloop-in forwards;
+    animation: 2s ease-in-out 0s bloop-in forwards;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -18,9 +17,11 @@
 }
 
 @keyframes bloop-in {
-    50% {
+    55% {
         opacity: 1;
         top: 0.5em;
+        left: 35vw;
+        right: 35vw;
     }
     100% {
         opacity: 1;
@@ -43,20 +44,41 @@
 
 .header-name {
     font-weight: bold;
-    color: black;
+    color: var(--olive);
     flex: 1.5;
+    white-space: nowrap;
+    font-family: 'nycd';
+    cursor: pointer;
 }
 
 .page-button {
-    color: rgb(122, 116, 111);
+    color: var(--slate);
     font-weight: bold;
     font-size: small;
     cursor: pointer;
     padding: 0.5em;
     flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: all 0.1s ease;
+    opacity: 0;
+    animation: 2s ease-in-out 0.25s appear-in forwards;
 }
 
-.page-button.selected {
-    color: rgb(64, 60, 57) !important;
+@keyframes appear-in {
+    55% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.page-button:hover {
     font-size: medium !important;
+}
+
+.page-button.selected {    
+    text-decoration-line: underline;
+    text-decoration-thickness: 3px;
 }

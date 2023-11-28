@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.6a2a03c7.css",
-    "main.js": "/static/js/main.09c27ae9.js",
+    "main.css": "/static/css/main.a8b5a44e.css",
+    "main.js": "/static/js/main.1178bb1e.js",
     "static/media/Raleway-VariableFont_wght.ttf": "/static/media/Raleway-VariableFont_wght.e14d84ccec6be3ff19e3.ttf",
+    "static/media/provo.png": "/static/media/provo.7dd944de3aea43436ecb.png",
     "static/media/linux.svg": "/static/media/linux.5888d746c8190fdaec1f9f710efaaf90.svg",
     "static/media/raspberry_pi.svg": "/static/media/raspberry_pi.f378c1788be1862a539d375ebbbded30.svg",
+    "static/media/cisco.svg": "/static/media/cisco.867ac56349d9da94e976b51dab9db457.svg",
     "static/media/node.svg": "/static/media/node.8c71fd11790c1b55f62eb252033f2c62.svg",
     "static/media/java.svg": "/static/media/java.38de31869a5a34c44a779c241f671a9a.svg",
     "static/media/aws.svg": "/static/media/aws.c81896d13bf49a172bc410a30608d14e.svg",
+    "static/media/BYU.svg": "/static/media/BYU.849f5281504eb383dedd06a61cc9f186.svg",
     "static/media/python.svg": "/static/media/python.b7dca7431ec705868eb4af0c7a3af670.svg",
     "static/media/docker.svg": "/static/media/docker.c1458ec6bc2dfadb44d064525c1d433c.svg",
     "static/media/github.svg": "/static/media/github.22861d029067f48455b871565623aeb7.svg",
@@ -22,11 +25,11 @@
     "static/media/django.svg": "/static/media/django.43e79a0f0d3f6ac7251af536cdd7fd70.svg",
     "index.html": "/index.html",
     "static/media/kotlin.svg": "/static/media/kotlin.036a9bb4afb97deb65898ff06132f39c.svg",
-    "main.6a2a03c7.css.map": "/static/css/main.6a2a03c7.css.map",
-    "main.09c27ae9.js.map": "/static/js/main.09c27ae9.js.map"
+    "main.a8b5a44e.css.map": "/static/css/main.a8b5a44e.css.map",
+    "main.1178bb1e.js.map": "/static/js/main.1178bb1e.js.map"
   },
   "entrypoints": [
-    "static/css/main.6a2a03c7.css",
-    "static/js/main.09c27ae9.js"
+    "static/css/main.a8b5a44e.css",
+    "static/js/main.1178bb1e.js"
   ]
 }

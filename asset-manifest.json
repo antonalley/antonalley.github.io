@@ -1,10 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.6f12b579.css",
-    "main.js": "/static/js/main.666b9814.js",
+    "main.css": "/static/css/main.d08826e9.css",
+    "main.js": "/static/js/main.a733202c.js",
     "static/media/portrait.jpg": "/static/media/portrait.6ff14962ef84e051ba70.jpg",
+    "static/media/Needs-first-home.png": "/static/media/Needs-first-home.f28988c1d53232c50bf8.png",
+    "static/media/lonomo_home.png": "/static/media/lonomo_home.d44566cd853ab6053775.png",
     "static/media/Raleway-VariableFont_wght.ttf": "/static/media/Raleway-VariableFont_wght.e14d84ccec6be3ff19e3.ttf",
+    "static/media/lonomo_login.png": "/static/media/lonomo_login.f92e1df1d933e4d8561e.png",
+    "static/media/lonomo_event.png": "/static/media/lonomo_event.886e6b51e59b11026aa2.png",
+    "static/media/Needs-first-buy.png": "/static/media/Needs-first-buy.7c08fafc8ce4864488dd.png",
+    "static/media/byepolar-home-4-4-23.png": "/static/media/byepolar-home-4-4-23.bc3a1000f72d3b300c8b.png",
     "static/media/provo.png": "/static/media/provo.7dd944de3aea43436ecb.png",
+    "static/media/fitness5000smalltall.png": "/static/media/fitness5000smalltall.3456e1da95dd3f60be62.png",
+    "static/media/byepolar-choose-side-4-4-23.png": "/static/media/byepolar-choose-side-4-4-23.4ca6617f46ee03271b38.png",
     "static/media/NothingYouCouldDo-Regular.ttf": "/static/media/NothingYouCouldDo-Regular.3170b8e5d362ca787108.ttf",
     "static/media/linux.svg": "/static/media/linux.5888d746c8190fdaec1f9f710efaaf90.svg",
     "static/media/raspberry_pi.svg": "/static/media/raspberry_pi.f378c1788be1862a539d375ebbbded30.svg",
@@ -27,11 +35,11 @@
     "static/media/django.svg": "/static/media/django.43e79a0f0d3f6ac7251af536cdd7fd70.svg",
     "index.html": "/index.html",
     "static/media/kotlin.svg": "/static/media/kotlin.036a9bb4afb97deb65898ff06132f39c.svg",
-    "main.6f12b579.css.map": "/static/css/main.6f12b579.css.map",
-    "main.666b9814.js.map": "/static/js/main.666b9814.js.map"
+    "main.d08826e9.css.map": "/static/css/main.d08826e9.css.map",
+    "main.a733202c.js.map": "/static/js/main.a733202c.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f12b579.css",
-    "static/js/main.666b9814.js"
+    "static/css/main.d08826e9.css",
+    "static/js/main.a733202c.js"
   ]
 }

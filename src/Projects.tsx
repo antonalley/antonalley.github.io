@@ -7,39 +7,71 @@ import l3 from "./images/lonomo_login.png"
 import nf1 from "./images/Needs-first-home.png"
 import nf2 from "./images/Needs-first-buy.png"
 import snakes1 from "./images/fitness5000smalltall.png"
+import githublogo from "./images/GitHub_Logo.png"
 import "./Projects.css"
 
 type tProject = {
     title: string,
     short_description: string,
     description: string,
+    tech?: string,
     skills: Array<any>,
-    videos: Array<any>,
-    photos: Array<any>,
+    media: Array<string>,
     github: Array<any>,
 }
 
-const chevron = <svg className="chevron" xmlns="http://www.w3.org/2000/svg" height="1.6em" width="1em" viewBox="0 0 320 512"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
-
+const right_chevron = <svg className="chevron" xmlns="http://www.w3.org/2000/svg" height="1.6em" width="1em" viewBox="0 0 320 512"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+const close_icon = <svg xmlns="http://www.w3.org/2000/svg" width="1.6em" height="1.6em" fill="var(--slate)" viewBox="0 0 16 16">
+    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm3.354 4.646L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708"/>
+    </svg>
 
 const projects_list: Array<tProject> = [
     {
-        title: "My Portfolio Website",
-        short_description: "",
+        title: "Rooster",
+        short_description: "Facial Recognition to Prevent Shoplifting",
         description: "",
+        tech: "",
+        skills: [
+            "Python",
+            "Open-Source",
+            "Linux"
+        ],
+        media: [],
+        github: [],
+    },
+    {
+        title: "Service Leap",
+        short_description: "CRM for window washers",
+        description: "",
+        tech: "",
+        skills: [
+            "React-Native",
+            "React",
+            "Stripe"
+        ],
+        media: [],
+        github: [],
+    },
+    {
+        title: "My Portfolio Website",
+        short_description: "This is what you are looking at right now.",
+        description: `
+        I've been interested in design for a while now, especially since I took a UI/UX Design class at BYU. A lot of my other projects have been pretty focused on functionality, so I wanted to put in extra effort to design my portfolio beautifully.
+        `,
+        tech:  "A React build hosted on Github Pages, 100% custom css",
         skills: [
             "React",
             "CSS",
 
         ],
-        videos: [],
-        photos: [],
+        media: [],
         github: [],
     },
     {
-        title: "Byepolar.tv: React.js and Firebase App",
-        short_description: "",
-        description: "Byepolar.tv is a web app that I am currently developing with Devin Jernigan as the Product Manager. It is a place for people to come together and discuss typically contreversial topics in a way that they can see all sides of the argument and gain trust and respect for other people. It is the first time that I have used firebase, and it has proved to be very useful, as I am using the realtime database, authentication, and hosting from it. I also learned how to use github actions to automatically deploy updates to the production site as I pull request them into the Production Branch, which has been really cool to use. The hardest part about this project is video call, because we are trying to get people to discuss online through video call, and it is difficult to do this when we want to do it in a very customized way, and on a tight budget(zero).",
+        title: "Byepolar.tv",
+        short_description: "React.js and Firebase App",
+        description: "Byepolar.tv is a web app that I am currently developing with Devin Jernigan as the Product Manager. It is a place for people to come together and discuss typically contreversial topics in a way that they can see all sides of the argument and gain trust and respect for other people.",
+        tech: "It is the first time that I have used firebase, and it has proved to be very useful, as I am using the realtime database, authentication, and hosting from it. I also learned how to use github actions to automatically deploy updates to the production site as I pull request them into the Production Branch, which has been really cool to use. The hardest part about this project is video call, because we are trying to get people to discuss online through video call, and it is difficult to do this when we want to do it in a very customized way, and on a tight budget(zero).",
         skills: [
             "Figma",
             "React",
@@ -48,13 +80,12 @@ const projects_list: Array<tProject> = [
             "Peer to Peer Video Call",
             "CI/CD"
         ],
-        videos: [],
-        photos: [bp1, bp2],
+        media: [bp1, bp2],
         github: ["https://github.com/antonalley/byepolar_react"],
     },
     {
-        title: "Lonomo: Swift iOS mobile development",
-        short_description: "",
+        title: "Lonomo",
+        short_description: "Swift iOS mobile development",
         description: "Lonomo was project I was working on for a few months fall 2022. I wanted to create a social event app to help people make more friends doing hobbies they love to do. I learned swift from scratch for this project, and learned how to connect it to the backend, which I created using the Django-rest framework in python, complete with authentication and api endpoints. I was also in a user experience course while I was designing this app, so I spent extra care on the design, and fully designed it in Figma before implementing it in code. I did user testing with the user experience as well, had about a dozen people test it",
         skills: [
             "Figma",
@@ -63,14 +94,14 @@ const projects_list: Array<tProject> = [
             "Python",
             "Django-REST",
         ],
-        videos: ["https://youtu.be/IA7Hyt8vpjU?list=TLGG0K7V4eArQ3syODExMjAyMw"],
-        photos: [l1,l2,l3],
+        media: ["https://www.youtube.com/embed/IA7Hyt8vpjU?mute=1&autoplay=1&playlist=IA7Hyt8vpjU&loop=1", l1,l2,l3],
         github: ["https://github.com/antonalley/lonomo_ios", "https://github.com/antonalley/lonomo_api"],
     },
     {
-        title: "Needs First: Hackathon Full-stack application",
-        short_description: "",
+        title: "Needs First",
+        short_description: "Hackathon Full-stack application",
         description: "Along with a product manager, Devin Jernigan, and a designer, Cedric Lancy, and I as the engineer, we created this application under 8 hours for a competition to get into the Sandbox program at BYU. The idea behind it was a marketplace to rent out medical equipment, so I created a live linux server running react on the front end, and Django-rest on the backend to create this interactive website.",
+        tech: "This is to be done soon",
         skills: [
             "Python",
             "JavaScript",
@@ -78,50 +109,115 @@ const projects_list: Array<tProject> = [
             "Django-REST",
             "Linux Server",
         ],
-        videos: ["https://youtu.be/p1EzpTzQTmU?si=KfNawTb8x2x8KARF"],
-        photos: [nf1, nf2],
+        media: ["https://www.youtube.com/embed/p1EzpTzQTmU?mute=1&autoplay=1&playlist=p1EzpTzQTmU&loop=1", nf1, nf2],
         github: ["https://github.com/antonalley/NeedsFirst"],
     },
     {
-        title: "Snakes AI: Genetic Algorithm Machine Learning",
-        short_description: "",
+        title: "Snakes AI",
+        short_description: "Genetic Algorithm Machine Learning",
         description: "I did this project when I first learned about machine learning. I got really excited about neural networks, and I wanted to figure everything out about them that I could. Being a novice programmer, I wanted to do it all without any external machine learning libraries, so I did it from scratch. I had to use linear algebra for the neural network, but the backpropigation techiniques were over my head at this point, so that's why I looked into genetic algorithms. It is definetly not the most effective, as you can see in the video it doesn't get super far. But at the same time it was really cool because I didn't program any stragegy or rules into it, all it took into account was the state of the board, and the neural network trained simply by a random genetic algorithm thousands of time overnight on my old janky laptop, and it learned as much as it did. Even though not super impressive, this project got me really excited about machine learning and its possibilities. The graph shows an example of the fitness over epochs of training.",
         skills: [
             "Python",
             "Machine Learning",
         ],
-        videos: ["https://youtu.be/CZDHCbbDORQ?si=1J7-4bLcM-gDKLTI"],
-        photos: [snakes1],
+        media: ["https://www.youtube.com/embed/CZDHCbbDORQ?mute=1&autoplay=1&playlist=CZDHCbbDORQ&loop=1", snakes1],
         github: ["https://github.com/antonalley/SNAKES-AI"],
     }
 ]
 
-export function Projects(){
+const right_media = <svg xmlns="http://www.w3.org/2000/svg" fill="var(--black)" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+
+const left_media = <svg xmlns="http://www.w3.org/2000/svg" fill="var(--black)" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                    </svg>
+
+
+
+export function Projects({instructions}){
     const [selected, setSelected] = useState<tProject>(null);
+    const [imgIndex, setImgIndex] = useState<number>(0);
+
 
     return (
-        <div className="projects">
+        <div className={`projects ${instructions}`}>
             <div className="projects-list">
                 {projects_list.map(project => (
-                    <div className="project-container" onClick={()=>setSelected(project)}>
+                    <div className={`project-container ${selected?.title===project.title && 'selected'}`} onClick={()=>{setSelected(project); setImgIndex(0)}}>
                         <div className="project-title">
                             {project.title}
                         </div>
                         <div className="project-skills">
-                            {project.skills.map((skill) => (
+                            {project?.skills?.map((skill) => (
                                 <div className="skill">{skill}</div>
                             ))}
                         </div>
-                        {chevron}
+                        {right_chevron}
                     </div>
                 ))}
                 <div className="project-container" style={{width:'40vh'}}></div>
             </div>
             <div className={`project-detail ${selected!==null ? 'open' : ''}`}>
-                <div className="closer" onClick={()=>setSelected(null)}>CLOSE</div>
-                <div className="pdisplay-title">{selected?.title}</div>
-                <div className="pdisplay-github"><a href={selected?.github[0]} target="_blank">Github Repository</a></div>
-                <div className="pdisplay-description">{selected?.description}</div>
+                <div className="closer" onClick={()=>setSelected(null)}>{close_icon}</div>
+                <h2 className="pdisplay-title">{selected?.title}</h2>
+                <div className="pdisplay-github">
+                    <a href={selected?.github[0]} target="_blank"><img src={githublogo}></img></a>
+                    </div>
+                <div className="pdisplay-description">
+                    <h3>Project Description</h3>
+                    {selected?.description}
+                </div>
+                <div className="pdisplay-description">
+                    <h3>Technology Overview</h3>
+                    {selected?.tech}
+                    <div className="project-skills">
+                        {selected?.skills?.map(skill => (
+                            <div className="skill">{skill}</div>
+                        ))}
+                    </div>
+                </div>
+                {selected?.media.length > 0 &&
+                <div className="pdisplay-media">
+                    <h3>Project Media</h3>
+                    <div className="pd-media-view">
+                        <div className="arrow-container left" onClick={()=>setImgIndex(c=>Math.max(0,c-1))}>
+                            <div className="arrow move-left">
+                                {left_media}
+                            </div>
+                        </div>
+                        <div className="arrow-container right" onClick={()=>setImgIndex(c=>Math.min(c+1, selected?.media.length - 1))}>
+                            <div className="arrow move-right">
+                                {right_media}
+                            </div>
+                        </div>
+                        {selected?.media.map((photo, i) => {
+                            let status: string;
+                            if (Math.abs(imgIndex - i) >= 2){
+                                status = "hidden"
+                            } else if (Math.abs(imgIndex - i) == 0 ){
+                                status = "center"
+                            } else if (imgIndex-i == 1){
+                                status = "left sub"
+                            } else if (imgIndex-i == -1){
+                                status = "right sub"
+                            }
+                            return (
+                            <div className={`pdisplay-img ${status}`}>
+                                {photo.includes("youtube") ?
+                                <iframe
+                                src={photo}
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen                             
+                                ></iframe> :
+                                <img src={photo} />
+                                }
+                            </div>
+                            
+                        )})}
+                    </div>
+                </div>
+                }
             </div>
         </div>
     )

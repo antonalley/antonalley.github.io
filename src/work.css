@@ -1,23 +1,13 @@
 .work-container {
     height: 100%;
-    padding-top: 4em;
-    opacity: 0;
-    transform: translateY(30vh);
-    animation: come-down 1s ease-in-out 0s forwards;
 }
 
-@keyframes come-down {
-    100% {
-        transform: none;
-        opacity: 1;
-    }
-    
-}
 
 .experience-list {
     color: var(--slate); 
     overflow-y: auto;
     height: 55vh;
+    -webkit-font-smoothing: antialiased;
 }
 
 .experience-list::-webkit-scrollbar {

@@ -1,11 +1,10 @@
 .projects {
-    padding-top: 5em;
+    padding-top: 1em;
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
     height: calc(100vh - 5em);
-    position: relative;
     overflow: hidden;
 }
 
@@ -68,6 +67,17 @@
     right: 1em;
 }
 
+.project-container.selected {
+    background-color: var(--slate);
+    color: var(--coconut);
+    cursor: pointer;
+}
+
+.project-container.selected .chevron {
+    opacity: 1;
+    right: 1em;
+}
+
 .project-title {
     text-align: start;
     font-weight: 500;
@@ -82,7 +92,7 @@
     
 }
 
-.project-skills .skill {
+.skill {
     padding: 10px;
     border-radius: 20px;
     outline: 1px rgb(115, 115, 115) solid;
@@ -91,12 +101,18 @@
 
 .project-detail {
     width: 0;
-    height: 100%;
+    min-height: 100%;
+    max-height: max-content;
     transition: all ease-in-out 0.5s;
     border-radius: 0.5em;
     color: var(--slate);
     opacity: 0;
     box-sizing: border-box;
+    display: flex;
+    text-align: start;
+    flex-direction: column;
+    position: relative;
+    overflow-y: auto;
 }
 
 .project-detail.open {
@@ -107,16 +123,117 @@
     padding: 3vw;
 }
 
+/* .pdisplay-title {
+    font-weight: 700;
+} */
+
 .pdisplay-description {
     font-size: 0.6em;
+    max-width: 90%;
 }
 
 .pdisplay-github a {
-    text-decoration: none;
-    font-size: small;
-    font-weight: bold;
-    padding: 0.5em;
-    border: solid black 1px;
-    border-radius: 1em;
-    width: fit-content;
+    background-color: var(--coconut);
+    padding: 0.3em 0.5em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    max-width: max-content;
+    border-radius: 0.4em;
 }
+
+.closer {
+    right: 1em;
+    top: 1em;
+    position: absolute;
+    cursor: pointer;
+}
+
+.pdisplay-media {
+    width: 100%;
+}
+
+.pd-media-view {
+    position: relative;
+    width: 100%;
+    height: 35vh;
+}
+
+.pdisplay-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    z-index: 2;
+    height: 35vh;
+    transition: all 0.8s ease-in-out;
+    padding: 0 5%;
+}
+
+.pdisplay-img img {
+    object-fit: cover;
+    height: 100%;
+    width: auto !important;
+}
+
+.pdisplay-img iframe {
+    height: 100%;
+    width: min-content !important;
+    z-index: 101;
+}
+
+.pdisplay-img.hidden {
+    opacity: 0;
+    z-index: 0;
+}
+
+.pdisplay-img.sub {
+    opacity: 0.35;
+    z-index: 1;
+    height: 30vh;
+}
+
+.pdisplay-img.left {
+    transform: translateX(-70%) translateY(-50%);
+}
+
+.pdisplay-img.right {
+    transform: translateX(-30%) translateY(-50%);
+}
+
+.arrow-container {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.arrow-container.left {
+    left: 0;
+}
+
+.arrow-container.right {
+    right: 0;
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+}
+
+.arrow.move-left {
+    left:-0.5em;
+}
+
+.arrow.move-right {
+    right: -0.5em;
+}
+

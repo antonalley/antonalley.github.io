@@ -3,16 +3,16 @@ import "./Header.css"
 export function Header({ selectedTab, setSelectedTab }){
     return (
         <div className="header">
-            <span className={`page-button ${selectedTab=="Skills" && "selected"}`}
-                onClick={()=>setSelectedTab("Skills")}>Skills</span>
-            <span className={`page-button ${selectedTab=="Work Experience" && "selected"}`}
-                onClick={()=>setSelectedTab("Work Experience")}>Work Experience</span>
+            <span className={`page-button ${selectedTab==0 && "selected"}`}
+                onClick={()=>setSelectedTab(0)}>Skills</span>
+            <span className={`page-button ${selectedTab==1 && "selected"}`}
+                onClick={()=>setSelectedTab(1)}>Work Experience</span>
             <span className="header-name"
-                onClick={()=>setSelectedTab("Intro")}>Anton Alley</span>
-            <span className={`page-button ${selectedTab=="Projects" && "selected"}`}
-                onClick={()=>setSelectedTab("Projects")}>Projects</span>
-            <span className={`page-button ${selectedTab=="Personal" && "selected"}`}
-                onClick={()=>setSelectedTab("Personal")}>Personal</span>
+                onClick={()=>setSelectedTab(2)}>Anton Alley</span>
+            <span className={`page-button ${selectedTab==3 && "selected"}`}
+                onClick={()=>setSelectedTab(3)}>Projects</span>
+            <span className={`page-button ${selectedTab==4 && "selected"}`}
+                onClick={()=>setSelectedTab(4)}>Personal</span>
         </div>
     )
 }

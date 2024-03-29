@@ -90,3 +90,10 @@
     flex-direction: column;
 }
 
+
+.popup-info {
+    max-width: 60vw;
+    width: 30ch;
+    text-align: center;
+    font-size: 1.5em;
+}

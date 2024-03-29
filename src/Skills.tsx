@@ -15,7 +15,7 @@ import Linux from "./icons/linux.svg"
 import Node from "./icons/node.svg"
 import Python from "./icons/python.svg"
 import Raspberry_pi from "./icons/raspberry_pi.svg"
-// import {ReactComponent as React} from "./icons/react.svg"
+import ReactIcon from "./icons/react.svg"
 import Stripe from "./icons/stripe.svg"
 import Swift from "./icons/swift.svg"
 import Typescript from "./icons/typescript.svg"
@@ -23,60 +23,112 @@ import Popup from './components/Popup';
 
 const logos_details = [
     {
+        rating: 5,
         'name': 'AWS',
         'logo': Aws,
-        'description': 'Knowledge how to use and implement S3, EC2, Amplify, Lambda, API Gateway, DynamoDB, IAM'
+        'description': 'Knowledge of how to use and implement S3, EC2, Amplify, Lambda, API Gateway, DynamoDB, IAM'
     },
     {
-        'logo': Css
+        rating: 7,
+        'name': 'CSS',
+        'logo': Css,
+        'description': 'My passion for css has grown, and you can see my skills in this portfolio website'
+    },
+    { 
+        rating: 5,
+        'name': 'Django',
+        'logo': Django,
+        'description': 'This is the first web framework I learned. The most heavily I used it was at my internship at Cisco, and we used Django-REST to setup endpoints and DAOs to connect to our postgres tables'
     },
     {
-        'logo': Django
+        rating: 5,
+        'name': 'Docker',
+        'logo': Docker,
+        'description': 'First used Docker at my Cisco Internship. First I hated it. But then I learned of its power when I realized how many problems it solved. So I even used it in a person project, for Rooster, because we wanted the code to work on mac, windows, and linux'
     },
     {
-        'logo': Docker
+        rating: 7,
+        'name': 'Firebase',
+        'logo': Firebase,
+        'description': 'When I first started learning how to make full stack web projects at a quick pace, my goto is firebase. Super easy and fast to setup. At scale I have learned its limitations however'
     },
     {
-        'logo': Firebase
-    },
-    {
+        rating: 8,
+        name: 'Github',
         'logo': Github
     },
     {
-        'logo': Google_maps
+        rating: 5,
+        'name': 'Google Maps',
+        'logo': Google_maps,
+        'description': 'Yes, I know how to use google maps. haha, not just the app. I included this because I used the api to setup a mapping application at my internship at cisco, so I got pretty familiar with it, and would be comfortable doing another project in it'
     },
     {
+        rating: 7,
+        'name': 'HTML',
         'logo': Html
     },
     {
+        rating: 3,
+        'name': 'Java',
         'logo': Java
     },
     {
+        rating: 8,
+        'name': 'JavaScript',
         'logo': Javascript
     },
     {
+        rating: 3,
+        'name': 'Kotlin',
         'logo': Kotlin
     },
     {
+        rating: 6,
+        'name': 'Linux',
         'logo': Linux
     },
     {
-        'logo': Node
+        rating: 7,
+        'name':'Node',
+        'logo': Node,
+        'description': "I've setup various node.js projects over the years. Most notable was at my Provo City job, I setup two node.js servers to send data from a database to an api consumed by a web app to analyze python scripts that were running on our system.",
     },
     {
-        'logo': Python
+        rating: 9,
+        'name': 'Python',
+        'logo': Python,
+        'description': "I've been programming in python for many years, wince abou 2015 when I was in high school. Used for so many different projects. This was my langauge I learned how to program in, and have done dozens of projects with it. Very proficient. Used in Jobs as well."
     },
     {
-        'logo': Raspberry_pi
+        rating: 9,
+        'name': 'Raspberry pi',
+        'logo': Raspberry_pi,
+        'description': "I've had a lot of fun with raspberry pi's over the years. When I was a teenager I bought one, installed the OS, and tried several projects with it, including hooking it up to a camera, and run on batter power on top of an RC car to stream video so that I could remote control the car from another room and see footage. I've also used it as a web server. I've also used it to hook up to ip cameras to run facial recognition software on (Rooster)",
     },
     {
-        'logo': Stripe
+        rating: 3,
+        'name': 'Stripe API',
+        'logo': Stripe,
+        'description': 'I still have a lot to learn about it, but I was developing an app that was to be used by door to door salesman making transactions. I had this whole plan to use stripe with our business partners, so I started coding a web app and a mobile app with stripe payments.'
     },
     {
-        'logo': Swift
+        rating: 3,
+        'name': 'Swift',
+        'logo': Swift,
+        'description': "I'm not a regular Swift developer. But one time I did a project (lonomo - look in the projects tab) and I was pretty proud of it. Learned Swift from scratch on my cousin's macbook air."
     },
     {
-        'logo': Typescript
+        rating: 9,
+        'name': 'TypeScript',
+        'logo': Typescript,
+        'description': 'First learned TypeScript at my internship at Cisco, then I rebelled and used JavaScript for a few years. But then as I got better at Software Development, I realized that TypeScript makes developing a better exprience, especially with full stack applicaitons. Now Its my go to',
+    },
+    {
+        rating: 8,
+        'name': 'React',
+        'logo': ReactIcon,
+        'description': "I love developing in React. Such a powerful tool. 1st learned at my Cisco internship. Since used in many personal projects. I can develop applications super quickly in react, and have a lot of fun with it."
     }
 ]
 
@@ -144,8 +196,10 @@ export function Skills({instructions}) {
                 {/* <div>{downButton}</div> */}
             </div>
             <Popup isOpen={selected!=null} onClose={()=>setSelected(null)}>
-                <div>
+                <div className='popup-info'>
                     <h1>{selected?.name}</h1>
+                    <p>Skill Level: {selected?.rating}</p>
+                    <p>{selected?.description}</p>
                 </div>
             </Popup>
             <div id="logo-grid-container" ref={fixedLogosRef}>

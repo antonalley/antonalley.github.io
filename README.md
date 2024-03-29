@@ -42,5 +42,7 @@ TO-ADD:
 PostgreSQL
 SQL
 Figma
+Supabase
+
 
 ###

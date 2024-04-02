@@ -1,0 +1,62 @@
+.App {
+  text-align: center;
+}
+
+.main-body {
+  background-color: var(--coconut);
+  height: 100vh;
+  overflow-y: hidden;
+  font-size: calc(10px + 2vmin);
+  color: var(--slate);
+}
+
+.main-body::-webkit-scrollbar {
+  display: none;
+}
+
+
+.tab-container {
+  width: 100%;
+  overflow-x: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-top: 4em;
+}
+
+.tab {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 1s ease-in-out;
+}
+.tab.view0 {
+  transform: translateX(0);
+}
+
+.tab.view100 {
+  transform: translateX(100vw);
+}
+.tab.view200 {
+  transform: translateX(200vw);
+}
+.tab.view300 {
+  transform: translateX(300vw);
+}
+.tab.view400 {
+  transform: translateX(400vw);
+}
+
+.tab.view-100 {
+  transform: translateX(-100vw);
+}
+.tab.view-200 {
+  transform: translateX(-200vw);
+}
+.tab.view-300 {
+  transform: translateX(-300vw);
+}
+.tab.view-400 {
+  transform: translateX(-400vw);
+}

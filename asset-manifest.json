@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.042ef7bd.css",
-    "main.js": "/static/js/main.c010ba8e.js",
-    "static/media/portrait.jpg": "/static/media/portrait.6ff14962ef84e051ba70.jpg",
+    "main.css": "/static/css/main.29c44042.css",
+    "main.js": "/static/js/main.8beb3908.js",
+    "static/media/portrait.jpg": "/static/media/portrait.c932739ff02d2d6029c0.jpg",
     "static/media/service-leap-top.png": "/static/media/service-leap-top.2895689cea514b923dbb.png",
     "static/media/Needs-first-home.png": "/static/media/Needs-first-home.f28988c1d53232c50bf8.png",
     "static/media/eaglescout.png": "/static/media/eaglescout.5ab47512fa0aeead7ae8.png",
@@ -47,11 +47,11 @@
     "index.html": "/index.html",
     "static/media/django.svg": "/static/media/django.43e79a0f0d3f6ac7251af536cdd7fd70.svg",
     "static/media/kotlin.svg": "/static/media/kotlin.036a9bb4afb97deb65898ff06132f39c.svg",
-    "main.042ef7bd.css.map": "/static/css/main.042ef7bd.css.map",
-    "main.c010ba8e.js.map": "/static/js/main.c010ba8e.js.map"
+    "main.29c44042.css.map": "/static/css/main.29c44042.css.map",
+    "main.8beb3908.js.map": "/static/js/main.8beb3908.js.map"
   },
   "entrypoints": [
-    "static/css/main.042ef7bd.css",
-    "static/js/main.c010ba8e.js"
+    "static/css/main.29c44042.css",
+    "static/js/main.8beb3908.js"
   ]
 }

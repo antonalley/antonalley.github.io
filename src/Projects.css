@@ -123,13 +123,33 @@
     padding: 3vw;
 }
 
-/* .pdisplay-title {
+
+.pdisplay-title-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.pdisplay-title {
     font-weight: 700;
-} */
+}
+
+.pdisplay-short {
+    font-size: 0.7em;
+}
 
 .pdisplay-description {
     font-size: 0.6em;
     max-width: 90%;
+}
+
+.pdisplay-github {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
 }
 
 .pdisplay-github a {

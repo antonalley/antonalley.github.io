@@ -6,6 +6,14 @@ import l2 from "./images/lonomo_home.png"
 import l3 from "./images/lonomo_login.png"
 import nf1 from "./images/Needs-first-home.png"
 import nf2 from "./images/Needs-first-buy.png"
+import sl1 from "./images/service-leap-cal.png"
+import sl2 from "./images/service-leap-calc.png"
+import sl3 from "./images/service-leap-home.png"
+import sl4 from "./images/service-leap-join.png"
+import sl5 from "./images/service-leap-login.png"
+import sl6 from "./images/service-leap-set.png"
+import sl7 from "./images/service-leap-timeline.png"
+import sl8 from "./images/service-leap-top.png"
 import snakes1 from "./images/fitness5000smalltall.png"
 import githublogo from "./images/GitHub_Logo.png"
 import "./Projects.css"
@@ -16,6 +24,7 @@ type tProject = {
     description: string,
     tech?: string,
     skills: Array<any>,
+    links?: Array<string>,
     media: Array<string>,
     github: Array<any>,
 }
@@ -29,28 +38,53 @@ const projects_list: Array<tProject> = [
     {
         title: "Rooster",
         short_description: "Facial Recognition to Prevent Shoplifting",
-        description: "",
-        tech: "",
+        description: `
+        I worked many hours on Rooster for several months as part of the Sandbox Program at BYU. We were really trying to start a business, and 
+        although I am not on the team any more, it is still being worked on. We had a product manager, Devin, and then Spencer and I on the
+        engineering side. The premise was creating a facial-recognition system to alert store managers when there is a repeat shoplifter
+        walking into their store, so they can prevent them from stealing again.
+        `,
+        tech: `
+        The majority of this project Spencer and I were working in Python and using a couple open-source libraries to try to get the facial-
+        recognition working, accurate, and fast. Out of the box, the open source libraries (DeepFace) were not enough for our project. We
+        did a lot of testing to choose the most accurate and fastest machine learning models. We also ran the program on a an on-premises
+        Raspberry-Pi or Jetson Nano in order to save on cost. To keep track of devices, we had a logging system, and a central database 
+        hosted with Supabase. My main contribution to the team was setting up the system for using DeepFace to repeatedly capture faces
+        and compare them to faces in the database to see if they are on the watchlist.
+        `,
         skills: [
             "Python",
             "Open-Source",
-            "Linux"
+            "Linux",
+            "Supabase",
+            "Raspberry Pi",
+            "Jetson Nano",
+            "Docker",
+            "Resend",
         ],
         media: [],
-        github: [],
+        github: ["https://github.com/Rooster-AI"],
     },
     {
         title: "Service Leap",
-        short_description: "CRM for window washers",
-        description: "",
-        tech: "",
+        short_description: "React-Native CRM for window washers",
+        description: `
+        Worked on a startup for the BYU Sandbox program. This was our business idea for a couple months before we lost traction. We wanted to 
+        create a custom CRM for window washers as a mobile app.
+        `,
+        tech: `
+        Mobile app built in React Native. Started to work on mobile payment processing tools with Stripe. Also build a landing page where
+        users could sign up, and started to work on creating a Stripe Connected account so businessess could setup their own account and
+        receive payments, while being connected to ours.
+        `,
         skills: [
             "React-Native",
             "React",
             "Stripe"
         ],
-        media: [],
-        github: [],
+        links: ["https://service-leap-prod.web.app/"],
+        media: [sl1, sl2, sl3, sl5, sl6,sl4, sl7, sl8],
+        github: ["https://github.com/antonalley/leap-landing-page/tree/main"],
     },
     {
         title: "My Portfolio Website",
@@ -65,7 +99,7 @@ const projects_list: Array<tProject> = [
 
         ],
         media: [],
-        github: [],
+        github: ["https://github.com/antonalley/antonalley.github.io"],
     },
     {
         title: "Byepolar.tv",
@@ -160,10 +194,16 @@ export function Projects({instructions}){
             </div>
             <div className={`project-detail ${selected!==null ? 'open' : ''}`}>
                 <div className="closer" onClick={()=>setSelected(null)}>{close_icon}</div>
-                <h2 className="pdisplay-title">{selected?.title}</h2>
+                <div className="pdisplay-title-container">
+                    <div className="pdisplay-title">{selected?.title}</div>
+                    <div className="pdisplay-short"><em>"{selected?.short_description}"</em></div>
+                </div>
                 <div className="pdisplay-github">
-                    <a href={selected?.github[0]} target="_blank"><img src={githublogo}></img></a>
-                    </div>
+                {selected?.github.map(glink => (
+                    <a href={glink} target="_blank"><img src={githublogo}></img></a>
+                ))}
+                    
+                </div>
                 <div className="pdisplay-description">
                     <h3>Project Description</h3>
                     {selected?.description}

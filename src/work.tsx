@@ -89,25 +89,38 @@ const other: Array<tWork> = [
     {
         "time": "Jan-May 2019, Aug 2021 - Jan 2022",
         "title": "BYU Commissary Receiver",
-        "short_description": "",
+        "short_description": "Internally Hauling, receiving, and delivering more than $10k worth of foodservice product daily",
         "long_description":"",
-        "skills": [],
-        "logo": ""
+        "skills": [
+            "communication",
+            "proactive",
+            "Requisitions",
+            "Purchase Orders"
+        ],
+        "logo": BYU
     },
     {
         "time": "Jun-Aug 2021",
         "title": "Painter",
-        "short_description": "",
+        "short_description": "Painted the Interior of Apartments for a couple of months. Supervisor only knew Spanish, so had to communicate in different ways. Good exposure to the Contracting world",
         "long_description":"",
-        "skills": [],
+        "skills": [
+            "communication",
+            "hard-work",
+            "painting",
+        ],
         "logo": ""
     },
     {
-        "time": "May-Aug 2019",
+        "time": "May-Aug 2018",
         "title": "General Contractor Apprentice",
-        "short_description": "",
+        "short_description": "An apprentice for a General Contractor working on Rental Properties",
         "long_description":"",
-        "skills": [],
+        "skills": [
+            "long-hours",
+            "hard-work",
+            "tenant-interaction"
+        ],
         "logo": ""
     }
 

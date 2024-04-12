@@ -1,0 +1,10 @@
+.personal{
+    width: 100%;
+    height: calc(100vh - 5em);
+    overflow: auto;
+}
+
+.personal-list { 
+    width: 80%;
+    margin: auto;
+}

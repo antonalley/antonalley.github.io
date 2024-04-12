@@ -199,10 +199,10 @@ export function Projects({instructions}){
                     <div className="pdisplay-short"><em>"{selected?.short_description}"</em></div>
                 </div>
                 <div className="pdisplay-github">
-                {selected?.github.map(glink => (
-                    <a href={glink} target="_blank"><img src={githublogo}></img></a>
-                ))}
-                    
+                    {selected?.github.map(glink => (
+                        <a href={glink} target="_blank"><img src={githublogo}></img></a>
+                    ))}
+                        
                 </div>
                 <div className="pdisplay-description">
                     <h3>Project Description</h3>

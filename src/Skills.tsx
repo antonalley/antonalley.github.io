@@ -32,61 +32,61 @@ const logos_details = [
         rating: 3,
         'name': 'CSS',
         'logo': Css,
-        'description': 'My passion for css has grown, and you can see my skills in this portfolio website'
+        'description': "I've always has a pasion for making websites look great. I have slowly developed my skills in css to be where they are now. I aimed to use this website as an opportunity to showcase my skills in CSS."
     },
     { 
         rating: 2,
         'name': 'Django',
         'logo': Django,
-        'description': 'This is the first web framework I learned. The most heavily I used it was at my internship at Cisco, and we used Django-REST to setup endpoints and DAOs to connect to our postgres tables'
+        'description': 'I have applicable experience with Django. It was used heavily during my internship at Cisco to setup endpoints and DAOs to connect to our Postgres tables'
     },
     {
         rating: 2,
         'name': 'Docker',
         'logo': Docker,
-        'description': 'First used Docker at my Cisco Internship. First I hated it. But then I learned of its power when I realized how many problems it solved. So I even used it in a person project, for Rooster, because we wanted the code to work on mac, windows, and linux'
+        'description': 'I first used Docker at my Cisco Internship. I quickly learned of its power and problem solving capability. I used it in a personal project, Rooster, in order for the code to work on Mac, Windows, and Linux'
     },
     {
         rating: 2,
         'name': 'Firebase',
         'logo': Firebase,
-        'description': 'When I first started learning how to make full stack web projects at a quick pace, my goto is firebase. Super easy and fast to setup. At scale I have learned its limitations however'
+        'description': 'Though I am aware of its limitations at scale, I have learned how to quickly develop full-stack web applications with Firebase.'
     },
     {
         rating: 6,
         name: 'Github',
         'logo': Github,
-        'description': "I always thought it was really dumb that they don't teach us to use Github at school. But I've been using Github for years now, and am pretty familar with the ins and outs, including commits, pull requests, issues, projects, Github actions, various integrations"
+        'description': "During my programming courses at BYU I recognized a gap in my education concerning Github. I took it upon myself to learn the ins and outs of the application, including commits, pull requests, issues, projects, Github actions, various integrations"
     },
     {
         rating: 1,
         'name': 'Google Maps API',
         'logo': Google_maps,
-        'description': 'Yes, I know how to use google maps. haha, not just the app. I included this because I used the api to setup a mapping application at my internship at cisco, so I got pretty familiar with it, and would be comfortable doing another project in it'
+        'description': 'I used this API to setup a mapping application at my internship at Cisco. I am familiar with it, and would be comfortable completing another project with it.'
     },
     {
         rating: 7,
         'name': 'HTML',
         'logo': Html,
-        'description': "My very first exposure to coding was when my uncle asked me if I wanted to learn some coding. He opened up our computer, pulled up notepad, and made a simple webpage with html. While no expert now, I get do or look up docs on how to do everything. "
+        'description': "HTML was my very first exposure to coding. I feel comfortable coding in plain HTML, but apply it more when I am coding in React with JSX."
     },
     {
         rating: 2,
         'name': 'Java',
         'logo': Java,
-        'description': "I've taken a couple courses at BYU using Java. Used it to build a full stack android application."
+        'description': "I've completed multiple courses at BYU using Java. In one of the courses, we built a full stack Android application."
     },
     {
         rating: 4,
         'name': 'JavaScript',
         'logo': Javascript,
-        'description': "I have mostly learned JavaScript while learning React, which I have been using very regularly for a couple of years now. I have built a couple websites which I used vanilla JavaScript."
+        'description': "My proficiency in JavaScript has been primarily developed through regular engagement with React over the past few years."
     },
     {
         rating: 1,
         'name': 'Kotlin',
         'logo': Kotlin,
-        "description": "In a class at BYU, we were building an android application, and we were given the choice of developing in Java or Kotlin. All the textbook and course materials were in Java, so if we did Kotlin we had to learn it ourselves. I wanted to challenge myself, so I went with Kotlin. I spent a lot of hours in the library reading a textbook to be able to use Kotlin for our project."
+        "description": "In a class at BYU, we were building an android application, and were given the choice of developing in Java or Kotlin. The course materials were all in Java, so if we chose Kotlin, we had to learn it ourselves. I wanted to challenge myself, so I went with Kotlin. I spent a lot of hours in the library reading a textbook to be able to use Kotlin for our project."
     },
     {
         rating: 7,
@@ -122,19 +122,19 @@ const logos_details = [
         rating: 1,
         'name': 'Swift',
         'logo': Swift,
-        'description': "I'm not a regular Swift developer. But one time I did a project (lonomo - look in the projects tab) and I was pretty proud of it. Learned Swift from scratch on my cousin's macbook air."
+        'description': "I've always wanted to learn how to do iOS development, so I learned Swift for a project I was working on (Lonomo on the projects tab"
     },
     {
         rating: 3,
         'name': 'TypeScript',
         'logo': Typescript,
-        'description': 'First learned TypeScript at my internship at Cisco, then I rebelled and used JavaScript for a few years. But then as I got better at Software Development, I realized that TypeScript makes developing a better exprience, especially with full stack applicaitons. Now Its my go to',
+        'description': "First learned TypeScript at my internship at Cisco, then I backtracked and used JavaScript for a few years since it was simpler. But then as I got better at Software Development, I realized that TypeScript makes developing a better exprience, especially with full stack applicaitons. Now it's my go to langauge",
     },
     {
         rating: 3,
         'name': 'React',
         'logo': ReactIcon,
-        'description': "I love developing in React. Such a powerful tool. 1st learned at my Cisco internship. Since used in many personal projects. I can develop applications super quickly in react, and have a lot of fun with it."
+        'description': "My use of React began during an internship at Cisco, where I first encountered this robust framework. Since then, it has become a regular part of my development toolkit, extensively used in personal projects. My proficiency allows for rapid application development."
     }
 ]
 

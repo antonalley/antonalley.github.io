@@ -1,5 +1,10 @@
 .work-container {
     height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
 }
 
 
@@ -18,10 +23,8 @@
     position: relative;
     width: fit-content;
     height: fit-content;
-    margin: 10vh 20vh;
-    padding-right: 20vh;
-    padding-left: 30vh;
-    
+    margin-top: 50px;
+    max-width: calc(min(1000px, 90vw));    
 }
 
 .experience-list-container::after {
@@ -47,7 +50,7 @@
     align-items: center;
 }
 
-.job-icon svg,img {
+.job-icon svg, .job-icon img {
     width: 7vh !important;
     width: auto;
     margin: auto;
@@ -58,12 +61,17 @@
     flex-direction: column;
     align-items: start;
     margin: 5vh;
+    width: 100%;
+    overflow: auto;
 }
 .time {
     font-size: small;
 }
 .job-title {
     font-weight: bold;
+    word-wrap: break-word;  /* Older browsers */
+    overflow-wrap: break-word;  /* Standard property */
+    text-align: start;
 }
 .short-description {
     font-size: smaller;
@@ -73,6 +81,7 @@
 .skills-display {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 15px;
     padding: 10px;
 }
@@ -89,6 +98,7 @@
     font-size: large;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 10px;
     padding-bottom: 2vh;
 }

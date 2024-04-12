@@ -97,3 +97,9 @@
     text-align: center;
     font-size: 1.5em;
 }
+
+@media (max-width: 600px) {
+    .popup-info {
+        font-size: 1em;
+    }
+}

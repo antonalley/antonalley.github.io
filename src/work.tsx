@@ -187,35 +187,35 @@ export function Work({instructions}){
         <div className={`work-container ${instructions}`}>
             
             <div className="experience-list-container">
-            <div className="toggles">
-                <div className={`toggle-option ${typeSelected==="revelant" && "selected"}`} onClick={() => setType("revelant")}>Relevant Experience</div>
-                <div className={`toggle-option ${typeSelected==="other" && "selected"}`} onClick={() => setType("other")}>Other Work Experience</div>
-                <div className={`toggle-option ${typeSelected==="personal" && "selected"}`} onClick={()=>setType("personal")}>Personal Accomplishments</div>
-            </div>
-            <div className="experience-list">
-                {getWork().map(job => (
-                    <div className="job">
-                        <div className="job-icon">
-                            <img src={job.logo} />
-                        </div>
-                    <div className="job-words">
-                        <div className="time">{job.time}</div>
-                        <div className="job-title">{job.title}</div>
-                        <div className="short-description">{job.short_description}</div>
-                        <div className="skills-display">
-                            {job.skills.map(skill => (
-                                <div className="skill-icon">
-                                    {skill}
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                    </div>
-                ))}
-                <div className="job" style={{height:'50vh'}}>
-
+                <div className="toggles">
+                    <div className={`toggle-option ${typeSelected==="revelant" && "selected"}`} onClick={() => setType("revelant")}>Relevant Experience</div>
+                    <div className={`toggle-option ${typeSelected==="other" && "selected"}`} onClick={() => setType("other")}>Other Work Experience</div>
+                    <div className={`toggle-option ${typeSelected==="personal" && "selected"}`} onClick={()=>setType("personal")}>Personal Accomplishments</div>
                 </div>
-            </div>
+                <div className="experience-list">
+                    {getWork().map(job => (
+                        <div className="job">
+                            <div className="job-icon">
+                                <img src={job.logo} />
+                            </div>
+                            <div className="job-words">
+                                <div className="time">{job.time}</div>
+                                <div className="job-title">{job.title}</div>
+                                <div className="short-description">{job.short_description}</div>
+                                <div className="skills-display">
+                                    {job.skills.map(skill => (
+                                        <div className="skill-icon">
+                                            {skill}
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                    <div className="job" style={{height:'50vh'}}>
+
+                    </div>
+                </div>
             </div>
         </div>
     )

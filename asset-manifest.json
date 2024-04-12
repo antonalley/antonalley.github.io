@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.56e94491.css",
-    "main.js": "/static/js/main.9f88503e.js",
+    "main.css": "/static/css/main.adab9139.css",
+    "main.js": "/static/js/main.6f169c67.js",
     "static/media/portrait.jpg": "/static/media/portrait.c932739ff02d2d6029c0.jpg",
     "static/media/service-leap-top.png": "/static/media/service-leap-top.2895689cea514b923dbb.png",
     "static/media/Needs-first-home.png": "/static/media/Needs-first-home.f28988c1d53232c50bf8.png",
@@ -47,11 +47,11 @@
     "static/media/django.svg": "/static/media/django.43e79a0f0d3f6ac7251af536cdd7fd70.svg",
     "index.html": "/index.html",
     "static/media/kotlin.svg": "/static/media/kotlin.036a9bb4afb97deb65898ff06132f39c.svg",
-    "main.56e94491.css.map": "/static/css/main.56e94491.css.map",
-    "main.9f88503e.js.map": "/static/js/main.9f88503e.js.map"
+    "main.adab9139.css.map": "/static/css/main.adab9139.css.map",
+    "main.6f169c67.js.map": "/static/js/main.6f169c67.js.map"
   },
   "entrypoints": [
-    "static/css/main.56e94491.css",
-    "static/js/main.9f88503e.js"
+    "static/css/main.adab9139.css",
+    "static/js/main.6f169c67.js"
   ]
 }

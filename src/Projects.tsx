@@ -14,6 +14,12 @@ import sl5 from "./images/service-leap-login.png"
 import sl6 from "./images/service-leap-set.png"
 import sl7 from "./images/service-leap-timeline.png"
 import sl8 from "./images/service-leap-top.png"
+import tw1 from "./images/tweeter1.png"
+import tw2 from "./images/tweeter2.png"
+import tw3 from "./images/tweeter3.png"
+import tw4 from "./images/tweeter4.png"
+import tw5 from "./images/tweeter5.png"
+import tw6 from "./images/tweeter6.png"
 import snakes1 from "./images/fitness5000smalltall.png"
 import githublogo from "./images/GitHub_Logo.png"
 import "./Projects.css"
@@ -35,6 +41,39 @@ const close_icon = <svg xmlns="http://www.w3.org/2000/svg" width="1.6em" height=
     </svg>
 
 const projects_list: Array<tProject> = [
+    {
+        title: "Twitter Clone",
+        short_description: "School Project Software Design",
+        description: `
+            Code was given to us for the UI. In this project we heavily focused on good software design.
+            Some Patterns that were used include the Model-View-Presenter, Facade, Inheritance, Delegation,
+            Strategy, Dependency Inversion, and Abstract Factory. It was a great way to use best practices
+            in terms of designing a whole system. We also implemented from scratch and got proficient at
+            several AWS services as listed in skills.`,
+        tech: `
+        This was a great opportunity to learn best practices in software design, and how to make educated
+        decisions when creating the design. Also got a lot of practice with some AWS services, and I feel
+        confident in my skills to implement them in other projects. Another notable accomplishment was our
+        use of SQS to speed up the user experience. We had to post a story to 10,000 of the user's followers
+        and have it seem really fast for the author, and post in 120 seconds for the other users. This was
+        great practice for a real world situation to make a project more scalable. Another notable skill
+        was designing this code so that it can be testable, and writing some unit tests for it.`,
+        skills: [
+            "React",
+            "Typescript",
+            "AWS",
+            "DynamoDB",
+            "IAM",
+            "API Gateway",
+            "Lambda",
+            "SQS",
+            "Node.js",
+            "Software Design",
+            "Unit Testing"
+        ],
+        media: [tw1, tw2, tw3, tw4, tw5, tw6],
+        github: []
+    },
     {
         title: "Rooster",
         short_description: "Facial Recognition to Prevent Shoplifting",

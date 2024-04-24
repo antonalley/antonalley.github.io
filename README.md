@@ -43,6 +43,7 @@ PostgreSQL
 SQL
 Figma
 Supabase
+AWS Specifics: SQS, IAM, Amplify, S3, DynamoDB, Lambda, EC2, API Gateway, Simple Email Service, CloudWatch, Route 53
 
 
 ###

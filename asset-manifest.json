@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.adab9139.css",
-    "main.js": "/static/js/main.6f169c67.js",
+    "main.js": "/static/js/main.50759d20.js",
     "static/media/portrait.jpg": "/static/media/portrait.c932739ff02d2d6029c0.jpg",
     "static/media/service-leap-top.png": "/static/media/service-leap-top.2895689cea514b923dbb.png",
     "static/media/Needs-first-home.png": "/static/media/Needs-first-home.f28988c1d53232c50bf8.png",
@@ -14,16 +14,22 @@
     "static/media/Needs-first-buy.png": "/static/media/Needs-first-buy.7c08fafc8ce4864488dd.png",
     "static/media/service-leap-cal.png": "/static/media/service-leap-cal.fa86eade8c42bb9890cb.png",
     "static/media/churchlogo.png": "/static/media/churchlogo.0c8fe09ee952e2203d53.png",
+    "static/media/tweeter4.png": "/static/media/tweeter4.7b83fe3289d26b0147d1.png",
     "static/media/service-leap-home.png": "/static/media/service-leap-home.ce540ea1d05fe8917acf.png",
     "static/media/service-leap-calc.png": "/static/media/service-leap-calc.76794d7689b1f7e99e99.png",
     "static/media/service-leap-join.png": "/static/media/service-leap-join.16a148cb23eee31ce247.png",
     "static/media/service-leap-set.png": "/static/media/service-leap-set.1b8a911cff9b91f92fc4.png",
     "static/media/service-leap-login.png": "/static/media/service-leap-login.d091a4a8d28bf00fe068.png",
+    "static/media/tweeter2.png": "/static/media/tweeter2.c8f58ba0533708393182.png",
     "static/media/byepolar-home-4-4-23.png": "/static/media/byepolar-home-4-4-23.bc3a1000f72d3b300c8b.png",
+    "static/media/tweeter3.png": "/static/media/tweeter3.a11c29badab3f93ef2ac.png",
+    "static/media/tweeter6.png": "/static/media/tweeter6.2c97dd920495e7b3edce.png",
+    "static/media/tweeter5.png": "/static/media/tweeter5.9df176b24e8b2fda7136.png",
     "static/media/provo.png": "/static/media/provo.7dd944de3aea43436ecb.png",
     "static/media/fitness5000smalltall.png": "/static/media/fitness5000smalltall.3456e1da95dd3f60be62.png",
     "static/media/byepolar-choose-side-4-4-23.png": "/static/media/byepolar-choose-side-4-4-23.4ca6617f46ee03271b38.png",
     "static/media/NothingYouCouldDo-Regular.ttf": "/static/media/NothingYouCouldDo-Regular.3170b8e5d362ca787108.ttf",
+    "static/media/tweeter1.png": "/static/media/tweeter1.94d4d34a06feafd7f5da.png",
     "static/media/linux.svg": "/static/media/linux.5888d746c8190fdaec1f9f710efaaf90.svg",
     "static/media/GitHub_Logo.png": "/static/media/GitHub_Logo.746ec8f0bc97208f903e.png",
     "static/media/react.svg": "/static/media/react.598d90dd4f36234e376cbc6ccd571550.svg",
@@ -48,10 +54,10 @@
     "index.html": "/index.html",
     "static/media/kotlin.svg": "/static/media/kotlin.036a9bb4afb97deb65898ff06132f39c.svg",
     "main.adab9139.css.map": "/static/css/main.adab9139.css.map",
-    "main.6f169c67.js.map": "/static/js/main.6f169c67.js.map"
+    "main.50759d20.js.map": "/static/js/main.50759d20.js.map"
   },
   "entrypoints": [
     "static/css/main.adab9139.css",
-    "static/js/main.6f169c67.js"
+    "static/js/main.50759d20.js"
   ]
 }

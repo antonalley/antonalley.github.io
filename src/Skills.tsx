@@ -104,7 +104,7 @@ const logos_details = [
         rating: 8,
         'name': 'Python',
         'logo': Python,
-        'description': "I've been programming in python for many years, wince abou 2015 when I was in high school. Used for so many different projects. This was my langauge I learned how to program in, and have done dozens of projects with it. Very proficient. Used in Jobs as well."
+        'description': "I've been programming in python for many years, since about 2015 when I was in high school. Used for many different projects. This was my langauge I learned how to program in, and have done dozens of projects with it. Very proficient. Used in Jobs as well."
     },
     {
         rating: 3,

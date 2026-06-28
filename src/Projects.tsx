@@ -33,6 +33,7 @@ type tProject = {
     links?: Array<string>,
     media: Array<string>,
     github: Array<any>,
+    embedding?: string,
 }
 
 const right_chevron = <svg className="chevron" xmlns="http://www.w3.org/2000/svg" height="1.6em" width="1em" viewBox="0 0 320 512"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
@@ -41,6 +42,24 @@ const close_icon = <svg xmlns="http://www.w3.org/2000/svg" width="1.6em" height=
     </svg>
 
 const projects_list: Array<tProject> = [
+    {
+        title: "Nest Savings",
+        short_description: "UI Designs and start coding a financial savings app",
+        description: ``,
+        tech: ``,
+        skills: [
+            'Figma',
+            'User Tests',
+            'Design',
+            'Supabase',
+            'React Native',
+            'PostgreSQL',
+        ],
+        links: [],
+        media: [],
+        github: [],
+        embedding: "https://embed.figma.com/design/O7ZtHIsPF9xLJgwCSGcif2/Nest-Savings-v2?node-id=108-66&embed-host=share",
+    },
     {
         title: "Twitter Clone",
         short_description: "School Project Software Design",
@@ -169,6 +188,7 @@ const projects_list: Array<tProject> = [
         ],
         media: ["https://www.youtube.com/embed/IA7Hyt8vpjU?mute=1&autoplay=1&playlist=IA7Hyt8vpjU&loop=1", l1,l2,l3],
         github: ["https://github.com/antonalley/lonomo_ios", "https://github.com/antonalley/lonomo_api"],
+        embedding: "https://embed.figma.com/design/MIEsTy6jcSp2YDGSBOzIiI/Lonomo-Mobile?node-id=0-1&embed-host=share",
     },
     {
         title: "Needs First",
@@ -255,6 +275,22 @@ export function Projects({instructions}){
                             <div className="skill">{skill}</div>
                         ))}
                     </div>
+                </div>
+                <div className="pdisplay-description">
+                    <h3>Figma Designs</h3>
+                    {selected?.embedding ? 
+
+                        <iframe 
+                            style={{border: '1px solid rgba(0, 0, 0, 0.1)'}} 
+                            width="800" 
+                            height="450" 
+                            src={selected.embedding} 
+                            allowFullScreen>
+                            </iframe>
+                    
+                    
+                    : <></>}
+                    
                 </div>
                 {selected?.media.length > 0 &&
                 <div className="pdisplay-media">
